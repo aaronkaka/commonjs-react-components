@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
         watch: {
             react: {
-                files: 'react_components/*.jsx',
+                files: ['react_components/*.jsx', 'index.html'],
                 tasks: ['browserify']
             }
         },
