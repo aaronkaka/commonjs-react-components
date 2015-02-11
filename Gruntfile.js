@@ -3,8 +3,9 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         watch: {
-            react: {
-                files: ['react_components/*.jsx', 'index.html'],
+            options: { livereload: true },
+            all: {
+                files: ['react_components/*.jsx', 'index.html', 'scripts/*.js'],
                 tasks: ['browserify']
             }
         },
