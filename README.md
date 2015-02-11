@@ -1,3 +1,3 @@
-# ReactJS with CommonJS example
+# ReactJS with CommonJS POC
 
-A simple example that accompanies http://simonsmith.io/writing-react-components-as-commonjs-modules/
+A simple proof-of-concept that accompanies http://simonsmith.io/writing-react-components-as-commonjs-modules/
