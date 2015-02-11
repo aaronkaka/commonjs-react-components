@@ -2,7 +2,7 @@ function init() {
 
   var eventedElem = document.getElementById('eventedElement');
 
-  var myEvent1 = new CustomEvent('initCard', {
+  var initComponent1 = new CustomEvent('initCard', {
       detail: {
           targetElem: "div1",
           username: "aaron.kaka",
@@ -10,10 +10,9 @@ function init() {
           avatar: "images/avatar.png"
       }
   });
+  eventedElem.dispatchEvent(initComponent1);
 
-  eventedElem.dispatchEvent(myEvent1);
-
-  var myEvent2 = new CustomEvent('initCard', {
+  var initComponent2 = new CustomEvent('initCard', {
       detail: {
           targetElem: "div2",
           username: "joe.schmo",
@@ -21,8 +20,7 @@ function init() {
           avatar: "images/wired.jpg"
       }
   });
-
-  eventedElem.dispatchEvent(myEvent2);
+  eventedElem.dispatchEvent(initComponent2);
 }
 
 window.onload = init;
