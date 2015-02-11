@@ -1,7 +1,8 @@
 function init() {
 
-  // First create the event
-  var myEvent1 = new CustomEvent("initCard", {
+  var eventedElem = document.getElementById('eventedElement');
+
+  var myEvent1 = new CustomEvent('initCard', {
       detail: {
           targetElem: "div1",
           username: "aaron.kaka",
@@ -10,10 +11,9 @@ function init() {
       }
   });
 
-  // Trigger it!
-  document.dispatchEvent(myEvent1);
+  eventedElem.dispatchEvent(myEvent1);
 
-  var myEvent2 = new CustomEvent("initCard", {
+  var myEvent2 = new CustomEvent('initCard', {
       detail: {
           targetElem: "div2",
           username: "joe.schmo",
@@ -22,7 +22,7 @@ function init() {
       }
   });
 
-  document.dispatchEvent(myEvent2);
+  eventedElem.dispatchEvent(myEvent2);
 }
 
 window.onload = init;

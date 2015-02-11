@@ -1,19 +1,19 @@
 /** @jsx React.DOM */
 
-var React   = require('react');
-var Profile = require('./Profile.jsx');
+var React  = require('react');
+var Avatar = require('./Avatar.jsx');
+var Bio    = require('./Bio.jsx');
 
-document.addEventListener("initCard", function(e) {
-
-  console.info("Event is: ", e);
-  console.info("Custom data is: ", e.detail);
-
-  React.render(
-    <Profile
-        username={e.detail.username}
-        bio={e.detail.bio}
-        avatar={e.detail.avatar}
-    />,
-    document.getElementById(e.detail.targetElem));
-
+module.exports = React.createClass({
+    render: function() {
+        return (
+            <div className="Profile">
+                <h2 className="Profile-title">{this.props.username}</h2>
+                <div className="Profile-body">
+                    <Avatar imgSrc={this.props.avatar} />
+                    <Bio text={this.props.bio} />
+                </div>
+            </div>
+        )
+    }
 });
