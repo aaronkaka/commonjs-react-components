@@ -32,7 +32,8 @@ function init() {
           eventedElem: eventedElementId,
           targetElem: "div3",
           username: "suzie.q",
-          bio: "This is Suzie's bio."
+          bio: "This is Suzie's bio.",
+          avatar: "images/suzieq.jpg"
       }
   });
   eventedElement.dispatchEvent(initComponent3);
@@ -44,6 +45,7 @@ function init() {
           targetElem: "div4",
           username: "outsider.card",
           bio: "This card does not belong to the evented group of cards."
+          // NO avatar
       }
   });
   document.getElementById('outsider').dispatchEvent(initComponent4);
