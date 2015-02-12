@@ -3,13 +3,19 @@
 var React   = require('react');
 var Card = require('./Card.jsx');
 
-document.getElementById('eventedElement').addEventListener('initCard', function(e) {
+var containerElements = document.querySelectorAll(".container");
 
-  console.info('Event is: ' + e.type + ' for ' + e.detail.targetElem);
-  console.info('Custom data is: ', e.detail);
+for (var i=0, max=containerElements.length; i < max; i++) {
 
-  React.render(
-    <Card details={e.detail} />,
-    document.getElementById(e.detail.targetElem));
+     document.getElementById(containerElements[i].id).addEventListener('initCard', function(e) {
 
-});
+      console.info('New Event: ' + e.type + ' for ' + e.detail.targetElem);
+      console.info('Custom data: ', e.detail);
+
+      React.render(
+        <Card details={e.detail} />,
+        document.getElementById(e.detail.targetElem));
+
+    });
+}
+

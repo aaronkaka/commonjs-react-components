@@ -37,6 +37,17 @@ function init() {
   });
   eventedElement.dispatchEvent(initComponent3);
 
+  // Outside the evented group
+  var initComponent4 = new CustomEvent('initCard', {
+      detail: {
+          // NO eventedElem
+          targetElem: "div4",
+          username: "outsider.card",
+          bio: "This card does not belong to the evented group of cards."
+      }
+  });
+  document.getElementById('outsider').dispatchEvent(initComponent4);
+
 }
 
 window.onload = init;

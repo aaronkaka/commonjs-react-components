@@ -16,7 +16,9 @@ module.exports = React.createClass({
     deleteBio: function () {
       this.state.details.bio = '[deleted]';
       this.setState(this.state);
-      this.state.evented.dispatchEvent(new CustomEvent('bioDeleted', {detail: this.state.details.username} ));
+      if (this.state.evented) {
+        this.state.evented.dispatchEvent(new CustomEvent('bioDeleted', {detail: this.state.details.username} ));
+      }
     },
 
     deleteBioEventHandler:  function (e) {
@@ -27,11 +29,15 @@ module.exports = React.createClass({
     },
 
     componentDidMount: function () {
+      if (this.state.evented) {
         this.state.evented.addEventListener('bioDeleted', this.deleteBioEventHandler);
+      }
     },
 
     componentWillUnmount: function () {
+      if (this.state.evented) {
         this.state.evented.removeEventListener('bioDeleted', this.deleteBioEventHandler);
+      }
     },
 
     render: function() {
