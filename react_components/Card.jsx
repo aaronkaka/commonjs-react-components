@@ -3,6 +3,7 @@
 var React  = require('react');
 var Avatar = require('./Avatar.jsx');
 var Bio    = require('./Bio.jsx');
+var Alert  = require('./Alert.jsx');
 
 module.exports = React.createClass({
 
@@ -23,7 +24,7 @@ module.exports = React.createClass({
 
     deleteBioEventHandler:  function (e) {
       if (e.detail !== this.state.details.username) {
-          this.state.alerts = '>>> ' + e.detail + ' deleted their bio! <<<';
+          this.state.alerts = e.detail + ' deleted their bio!';
           this.setState(this.state);
       }
     },
@@ -54,7 +55,8 @@ module.exports = React.createClass({
                 <Bio text={detail.bio} />
                 <hr />
                 <button className="btn btn-danger" onClick={this.deleteBio}>Delete bio</button>
-                <br /><h5>{this.state.alerts}</h5>
+                <br /><br />
+                <Alert text={this.state.alerts} />
 
                 <form>
                   <div className="input-group">
