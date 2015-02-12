@@ -3,29 +3,28 @@
     <head>
         <title>CommonJS Component POC</title>
         <meta charset="utf-8">
-        <style>
-            div {
-                background-color: #b0c4de;
-            }
-        </style>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <h2>Card Components</h2>
-
-        <div id="eventedElement">
-            <div id="div1">
+       <div class="container" id="eventedElement">
+        <h2 class="text-center">Card Components</h2>
+        <div class="row">
+            <div id="div1" class="col-md-4 col-sm-6">
                 Div 1
             </div>
-            <hr>
-            <div id="div2">
+            <div id="div2" class="col-md-4 col-sm-6">
                 Div 2
             </div>
-            <hr>
-        </div>
+            <div id="div3" class="col-md-4 col-sm-6">
+                Div 3
+            </div>
+        </div><!--/row-->
+       </div><!--/container-->
 
         <script src="scripts/eventing.js"></script>
         <script src="dist/bundle.js"></script>
-        <!--for DEV only-->
+        <!--scripts for DEV only-->
         <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>

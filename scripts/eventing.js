@@ -26,6 +26,17 @@ function init() {
       }
   });
   eventedElement.dispatchEvent(initComponent2);
+
+  var initComponent3 = new CustomEvent('initCard', {
+      detail: {
+          eventedElem: eventedElementId,
+          targetElem: "div3",
+          username: "suzie.q",
+          bio: "This is Suzie's bio."
+      }
+  });
+  eventedElement.dispatchEvent(initComponent3);
+
 }
 
 window.onload = init;

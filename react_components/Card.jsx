@@ -39,15 +39,28 @@ module.exports = React.createClass({
         var detail = this.state.details;
 
         return (
-            <div className="Profile">
-                <h2 className="Profile-title">{detail.username}</h2>
-                <div className="Profile-body">
-                    <Avatar imgSrc={detail.avatar} />
-                    <Bio text={detail.bio} />
-                </div>
-                <button onClick={this.deleteBio}>Delete bio</button>
+          <div className="panel panel-default">
+             <div className="panel-heading"><h4>{detail.username}</h4></div>
+              <div className="panel-body">
+                <Avatar imgSrc={detail.avatar || 'http://placehold.it/150x150'} />
+                <div className="clearfix"></div>
+                <hr />
+                <Bio text={detail.bio} />
+                <hr />
+                <button className="btn btn-danger" onClick={this.deleteBio}>Delete bio</button>
                 <br /><h5>{this.state.alerts}</h5>
-            </div>
+
+                <form>
+                  <div className="input-group">
+                    <div className="input-group-btn">
+                    <button className="btn btn-default">+1</button><button className="btn btn-default"><i className="glyphicon glyphicon-share"></i></button>
+                    </div>
+                    <input type="text" className="form-control" placeholder="Add a comment.." />
+                  </div>
+                </form>
+
+              </div>
+          </div>
         )
     }
 });
