@@ -1,5 +1,7 @@
 # CommonJS React Components
 
+![Image](screenshot.png?raw=true "screenshot")
+
 ## Goal
 
 A simple proof-of-concept inspired by http://simonsmith.io/writing-react-components-as-commonjs-modules/
