@@ -30,3 +30,6 @@ Once the above is complete, open a browser tab to index.html - no server require
 ## Live Reload
 
 Live reload is activated, so that any saved change to the source automatically reloads the browser page.
+
+    grunt watch
+    
