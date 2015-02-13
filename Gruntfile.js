@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             },
             client: {
                 src: ['react_components/**/*.jsx'],
-                dest: 'dist/bundle.js'
+                dest: 'dist/card-component.js'
             }
         }
     });
