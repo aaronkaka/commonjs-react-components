@@ -9,21 +9,21 @@ module.exports = React.createClass({
 
     getInitialState: function () {
         return {
-          details: this.props.details,
-          evented: document.getElementById(this.props.details.eventedElem)
+          data: this.props.data,
+          evented: document.getElementById(this.props.data.eventedElem)
         }
     },
 
     deleteBio: function () {
-      this.state.details.bio = '[deleted]';
+      this.state.data.bio = '[deleted]';
       this.setState(this.state);
       if (this.state.evented) {
-        this.state.evented.dispatchEvent(new CustomEvent('bioDeleted', {detail: this.state.details.username} ));
+        this.state.evented.dispatchEvent(new CustomEvent('bioDeleted', {detail: this.state.data.username} ));
       }
     },
 
     deleteBioEventHandler:  function (e) {
-      if (e.detail !== this.state.details.username) {
+      if (e.detail !== this.state.data.username) {
           this.state.alerts = e.detail + ' deleted their bio!';
           this.setState(this.state);
       }
@@ -43,16 +43,16 @@ module.exports = React.createClass({
 
     render: function() {
 
-        var detail = this.state.details;
+        var data = this.state.data;
 
         return (
           <div className="panel panel-default">
-             <div className="panel-heading"><h4>{detail.username}</h4></div>
+             <div className="panel-heading"><h4>{data.username}</h4></div>
               <div className="panel-body">
-                <Avatar imgSrc={detail.avatar || 'http://placehold.it/150x150'} />
+                <Avatar imgSrc={data.avatar || 'http://placehold.it/150x150'} />
                 <div className="clearfix"></div>
                 <hr />
-                <Bio text={detail.bio} />
+                <Bio text={data.bio} />
                 <hr />
                 <button className="btn btn-danger" onClick={this.deleteBio}>Delete bio</button>
                 <br /><br />

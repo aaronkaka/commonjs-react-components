@@ -13,7 +13,7 @@ for (var i=0, max=containerElements.length; i < max; i++) {
       console.info('Custom data: ', e.detail);
 
       React.render(
-        <Card details={e.detail} />,
+        <Card data={e.detail} />,
         document.getElementById(e.detail.targetElem));
 
     });
