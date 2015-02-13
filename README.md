@@ -2,13 +2,15 @@
 
 ![Image](screenshot.png?raw=true "screenshot")
 
-## Goal
+## Goals
 
 A simple proof-of-concept inspired by http://simonsmith.io/writing-react-components-as-commonjs-modules/
 
-Beyond creating React components, however, this POC is meant to abstract away the component's implementation without 
-leakage so that it can be consumed without knowledge of a specific library. Interaction with, and between, instances of 
-the component is accomplished purely by means of vanilla JavaScript DOM eventing.
+- Use CommonJS to build and share UI components
+- Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
+specific library or framework
+- No component API, event everything (using vanilla JavaScript DOM eventing)
+- Consumer decides DOM location, and eventing eligibility
 
 Styled using the ubiquitous Bootstrap v3 for mobile-first responsiveness.
 

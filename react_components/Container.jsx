@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 
-var React   = require('react');
-var Card = require('./Card.jsx');
+var React = require('react');
+var Card  = require('./Card.jsx');
 
 var containerElements = document.querySelectorAll(".container");
 
