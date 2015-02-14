@@ -9,10 +9,9 @@ A simple proof-of-concept inspired by http://simonsmith.io/writing-react-compone
 - Use CommonJS to build and share UI components
 - Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
 specific library or framework
-- No component API, event everything (using vanilla JavaScript DOM eventing)
-- Consumer decides DOM location, and eventing eligibility
+- No component API, event all interaction
 
-Styled using the ubiquitous Bootstrap v3 for mobile-first responsiveness.
+Utilizes vanilla JavaScript DOM eventing. Styled using the ubiquitous Bootstrap v3 for mobile-first responsiveness.
 
 ## Prerequisites
 
