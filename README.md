@@ -6,7 +6,7 @@
 
 A simple proof-of-concept inspired by http://simonsmith.io/writing-react-components-as-commonjs-modules/
 
-- Use CommonJS to build and share UI components
+- Use [CommonJS Modules](https://www.safaribooksonline.com/library/view/learning-javascript-design/9781449334840/ch11s03.html) to build and share UI components
 - Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
 specific library or framework
 - No component API, event all interaction
