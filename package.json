@@ -1,12 +1,12 @@
 {
-  "name": "react-post",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-components",
+  "version": "0.0.1",
+  "description": "CommonJS React components, with eventing as the mechanism for interaction.",
+  "main": "dist/card-component.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Aaron Kaka (aaron.kaka@gmail.com)",
   "license": "BSD-2-Clause",
   "dependencies": {
     "envify": "~0.2.0",
