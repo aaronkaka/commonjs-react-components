@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aaron Kaka (aaron.kaka@gmail.com)",
-  "license": "BSD-2-Clause",
+  "author": "Aaron Kaka <aaron.kaka@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "envify": "~0.2.0",
     "react": "~0.12.0",
@@ -16,5 +16,11 @@
     "grunt-browserify": "~1.3.0",
     "grunt-react": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3"
-  }
+  },
+  "keywords": [
+    "commonjs",
+    "react",
+    "component",
+    "eventing"
+  ]
 }
