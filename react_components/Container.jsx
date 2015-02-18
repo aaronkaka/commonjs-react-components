@@ -9,12 +9,14 @@ for (var i=0, max=containerElements.length; i < max; i++) {
 
      document.getElementById(containerElements[i].id).addEventListener('initCard', function(e) {
 
-      console.info('New Event: ' + e.type + ' for ' + e.detail.targetElem);
+      var targetElement = e.detail.targetElem;
+
+      console.info('New Event: ' + e.type + ' for ' + targetElement);
       console.info('Custom data: ', e.detail);
 
       React.render(
-        <Card data={e.detail} />,
-        document.getElementById(e.detail.targetElem));
+        <Card data={e.detail} key={targetElement} />,
+        document.getElementById(targetElement));
 
     });
 }
