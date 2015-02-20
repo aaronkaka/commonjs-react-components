@@ -21,6 +21,8 @@ Install [NodeJS](http://nodejs.org/download/). This automatically installs npm.
 
 Now using [webpack](http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html) !
 
+    npm install webpack -g 
+
 ### Can I see the project working before I change anything?
 
 After cloning the repo:
@@ -29,7 +31,13 @@ After cloning the repo:
     npm install
     npm run dev
 
-Once the above is complete, open a browser tab to localhost:8080.
+Once the above is complete, open a browser tab to localhost:8080. In this scenario, the dev.card-component.js is in-memory!
+
+### How do I create the minified distribution version?
+
+    webpack -p
+    
+Then script include the 'build/dist.card-component.js' in your page.
 
 ### Live Reload
 

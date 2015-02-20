@@ -1,8 +1,8 @@
 {
   "name": "react-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
-  "main": "dist/card-component.js",
+  "main": "build/dist.card-component.js",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --hot --progress --colors"
   },
