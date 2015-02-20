@@ -1,9 +1,7 @@
-/** @jsx React.DOM */
-
 var React  = require('react');
-var Avatar = require('./Avatar.jsx');
-var Bio    = require('./Bio.jsx');
-var Alert  = require('./Alert.jsx');
+var Avatar = require('./Avatar.js');
+var Bio    = require('./Bio.js');
+var Alert  = require('./Alert.js');
 
 module.exports = React.createClass({
 

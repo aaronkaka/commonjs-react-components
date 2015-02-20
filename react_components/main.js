@@ -1,7 +1,5 @@
-/** @jsx React.DOM */
-
 var React = require('react');
-var Card  = require('./Card.jsx');
+var Card  = require('./Card.js');
 
 // Convention being used is that the card components go into container-styled divs
 var containerElements = document.querySelectorAll(".container");
