@@ -1,3 +1,5 @@
+'use strict';
+
 var React  = require('react');
 var Avatar = require('./Avatar.js');
 var Bio    = require('./Bio.js');

@@ -20,6 +20,7 @@ Install [NodeJS](http://nodejs.org/download/). This automatically installs npm.
 ## Tool Chain
 
 Now using [webpack](http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html) !
+(replaces Grunt/Browserify)
 
     npm install webpack -g 
 
@@ -37,7 +38,7 @@ Once the above is complete, open a browser tab to localhost:8080. In this scenar
 
     webpack -p
     
-Then script include the 'build/dist.card-component.js' in your page.
+Then script include the 'build/dist.card-component.js' in your consuming markup.
 
 ### Live Reload
 
