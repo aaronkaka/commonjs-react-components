@@ -1,11 +1,11 @@
 'use strict';
 
+require('../css/styles.css');
+
 var React  = require('react');
 var Avatar = require('./Avatar.js');
 var Bio    = require('./Bio.js');
 var Alert  = require('./Alert.js');
-
-require('../css/styles.css');
 
 module.exports = React.createClass({
 

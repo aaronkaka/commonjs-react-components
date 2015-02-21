@@ -1,5 +1,7 @@
 'use strict';
 
+require('../css/bootstrap.min.css');
+
 var React = require('react');
 var Card  = require('./Card.js');
 
