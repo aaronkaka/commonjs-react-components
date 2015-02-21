@@ -9,7 +9,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'jsx-loader' }
+      { test: /\.js$/, loader: 'jsx-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]
   }
 };
