@@ -44,4 +44,13 @@ Live reload is activated, so that any saved change to the watched source automat
 
     webpack -p
     
-Then you can script include the _build/dist.card-component.js_ in your consuming markup.
+Then you can script include the _build/dist.card-component.js_ in your consuming markup. 
+
+### How do I require() it into my consuming application?
+
+Publish your component to an npm registry, set up your project with webpack and necessary plugins, and npm install. 
+Example usage:
+
+    var Cardstrap = require('commonjs-react-components');
+    Cardstrap('.container');
+    

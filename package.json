@@ -1,13 +1,17 @@
 {
-  "name": "react-components",
-  "version": "0.0.3",
+  "name": "commonjs-react-components",
+  "version": "1.0.2",
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
-  "main": "build/dist.card-component.js",
+  "main": "react_components/index.js",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --hot --progress --colors"
   },
   "author": "Aaron Kaka <aaron.kaka@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronkaka/commonjs-react-components"
+  },
   "dependencies": {
     "css-loader": "^0.9.1",
     "react": "~0.12.0",
