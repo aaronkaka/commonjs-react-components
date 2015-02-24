@@ -49,6 +49,7 @@ Then you can script include the _build/dist.card-component.js_ in your consuming
 ### How do I require() it into my consuming application?
 
 Publish your component to an npm registry, set up your project with webpack and necessary plugins, and npm install it. 
+
 Example usage:
 
     var Cardstrap = require('commonjs-react-components');
