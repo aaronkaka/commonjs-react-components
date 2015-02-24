@@ -28,7 +28,8 @@ function cardstrap(containerClass) {
   }
 }
 
-// For script includes
-cardstrap('.container');
+if (__DEV__) {
+  cardstrap('.container');
+}
 
 module.exports = cardstrap;

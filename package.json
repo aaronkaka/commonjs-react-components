@@ -1,10 +1,10 @@
 {
   "name": "commonjs-react-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
   "main": "react_components/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --hot --progress --colors"
+    "dev": "BUILD_DEV=1 webpack-dev-server --devtool eval --hot --progress --colors"
   },
   "author": "Aaron Kaka <aaron.kaka@gmail.com>",
   "license": "MIT",

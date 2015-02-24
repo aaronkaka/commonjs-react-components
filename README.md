@@ -22,8 +22,7 @@ Install [NodeJS](http://nodejs.org/download/). This automatically installs npm.
 Using ~~Grunt/Browserify~~ 
 [webpack](http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html):
 
-
-    npm install webpack -g 
+    npm install webpack -g
 
 ### Can I see the project working before I change anything?
 
@@ -52,6 +51,9 @@ Publish your component to an npm registry, set up your project with webpack and 
 
 Example usage:
 
+    > npm install commonjs-react-components
+
+    JavaScript:
     var Cardstrap = require('commonjs-react-components');
     Cardstrap('.container');
     

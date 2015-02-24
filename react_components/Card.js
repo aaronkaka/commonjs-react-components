@@ -63,7 +63,7 @@ module.exports = React.createClass({
                 <form>
                   <div className="input-group">
                     <div className="input-group-btn">
-                    <button className="btn btn-default">+1</button><button className="btn btn-default"><i className="glyphicon glyphicon-share"></i></button>
+                    <button className="btn btn-default">+1</button><button className="btn btn-default">s</button>
                     </div>
                     <input type="text" className="form-control" placeholder="Add a comment.." />
                   </div>
