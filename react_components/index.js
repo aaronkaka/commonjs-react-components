@@ -28,7 +28,7 @@ function cardstrap(containerClass) {
   }
 }
 
-if (__DEV__) {
+if (__SCRIPTINCLUDE__) {
   cardstrap('.container');
 }
 
