@@ -39,23 +39,29 @@ Once the above is complete, open a browser tab to localhost:8080. In this scenar
 
 Live reload is activated, so that any saved change to the watched source automatically reloads the browser page.
 
-### How do I create the minified distribution version?
+### Feature Flag
 
-    webpack -p
+The SCRIPTINCLUDE feature flag is used at build time to determine whether the component is a simple script include or 
+brought in as a require-able npm module. **Either way**, it must be addressed in the consumer webpack config:
+
+    var definePlugin = new webpack.DefinePlugin({
+        __SCRIPTINCLUDE__: JSON.stringify(JSON.parse(process.env.BUILD_SCRIPTINCLUDE || 'false'))
+    });
     
-Then you can script include the _build/dist.card-component.js_ in your consuming markup. 
+In the case of a script include for _build/dist.card-component.js_, build the minified version:
+
+    > BUILD_SCRIPTINCLUDE=1 webpack -p
 
 ### How do I require() it into my consuming application?
 
-Publish your component to an npm registry, set up your project with webpack and necessary plugins, and npm install it.
+Publish your component to an npm registry; set up your project with webpack, including loaders and feature flag handler.
+
+Then in your consuming app:
  
-**Note** that your webpack config must handle the SCRIPTINCLUDE feature flag.
+    > npm install commonjs-react-components
 
 Example usage:
 
-    > npm install commonjs-react-components
-
-    JavaScript:
     var Cardstrap = require('commonjs-react-components');
     Cardstrap('.container');
     
