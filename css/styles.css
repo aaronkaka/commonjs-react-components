@@ -13,7 +13,6 @@ author: bootply.com
 body {
   background-color:#e0e0e0;
   -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto,arial,sans-serif;
 }
 .navbar-default {background-color:#f4f4f4;margin-top:50px;border-width:0;z-index:5;}
 .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > li:hover > a {border:0 solid #4285f4;border-bottom-width:2px;font-weight:800;background-color:transparent;}
@@ -101,4 +100,8 @@ h3,h4,h5 {
 
 #main {
  padding-top:120px;
+}
+
+p {
+ font: normal 18px Roboto,arial,sans-serif;
 }

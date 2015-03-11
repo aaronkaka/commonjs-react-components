@@ -11,7 +11,11 @@ to build and share UI components
 - Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
 specific library or framework
 - No component API, event all interaction
-- **All styling is bundled with the component, simply using `require()` statements!**
+- **External styling is bundled with the component, simply using `require()` statements!**
+- Update: **Component-specific styling is scoped to the component!**
+
+External CSS is used here because that is often how we bring in styling, and it is useful to show that it need not be 
+globally applied.
 
 ## Prerequisites
 
@@ -32,7 +36,7 @@ After cloning the repo:
     npm install
     npm run dev
 
-Once the above is complete, open a browser tab to localhost:8080. In this scenario, the _dev.card-component.js_ is 
+Once the above is complete, open a browser tab to **localhost:8080**. In this scenario, the _dev.card-component.js_ is 
 **in-memory**!
 
 ### Live Reload
@@ -42,7 +46,7 @@ Live reload is activated, so that any saved change to the watched source automat
 ### Feature Flag
 
 The SCRIPTINCLUDE feature flag is used at build time to determine whether the component is a simple script include or 
-brought in as a require-able npm module. **Either way**, it must be addressed in the consumer webpack config:
+brought in as a require-able npm module. Either way, it must be addressed in the consumer webpack config:
 
     var definePlugin = new webpack.DefinePlugin({
         __SCRIPTINCLUDE__: JSON.stringify(JSON.parse(process.env.BUILD_SCRIPTINCLUDE || 'false'))
@@ -55,7 +59,7 @@ In the case of a script include for _build/dist.card-component.js_, build the mi
 ### How do I require() it into my consuming application?
 
 Publish your component to an npm registry; set up your project with webpack, including loaders and feature flag handler.
-
+    
 Then in your consuming app:
  
     > npm install commonjs-react-components
@@ -65,3 +69,6 @@ Example usage:
     var Cardstrap = require('commonjs-react-components');
     Cardstrap('.container');
     
+Then you must build the required bundle you've configured:
+
+    webpack [-p]
