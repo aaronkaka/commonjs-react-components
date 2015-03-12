@@ -11,7 +11,7 @@ to build and share UI components
 - Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
 specific library or framework
 - No component API, event all interaction
-- **External styling is bundled with the component, simply using `require()` statements!**
+- **External styling is bundled with the component, simply using `require` statements!**
 - Update: **Component-specific styling is scoped to the component!**
 
 External CSS is used here because that is often how we bring in styling, and it is useful to show that it need not be 
@@ -30,7 +30,7 @@ Using ~~Grunt/Browserify~~
 
 ### Can I see the project working before I change anything?
 
-After cloning the repo:
+After cloning the repo (\*nix):
 
     cd commonjs-react-components
     npm install
@@ -52,7 +52,7 @@ brought in as a require-able npm module. Either way, it must be addressed in the
         __SCRIPTINCLUDE__: JSON.stringify(JSON.parse(process.env.BUILD_SCRIPTINCLUDE || 'false'))
     });
     
-In the case of a script include for _build/dist.card-component.js_, build the minified version:
+In the case of a script include for _build/dist.card-component.js_, build the minified version (\*nix):
 
     > BUILD_SCRIPTINCLUDE=1 webpack -p
 
@@ -64,11 +64,11 @@ Then in your consuming app:
  
     > npm install commonjs-react-components
 
-Example usage:
+Example javascript:
 
     var Cardstrap = require('commonjs-react-components');
     Cardstrap('.container');
     
 Then you must build the required bundle you've configured:
 
-    webpack [-p]
+    > webpack [-p]
