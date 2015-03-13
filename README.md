@@ -11,8 +11,8 @@ to build and share UI components
 - Abstract away the component's implementation without leakage so that it can be consumed without knowledge of a 
 specific library or framework
 - No component API, event all interaction
-- **External styling is bundled with the component, simply using `require` statements!**
-- Update: **Component-specific styling is scoped to the component!**
+- **External styling is bundled with the component, simply using `require` statements**
+- Component-specific styling is scoped to the component
 
 External CSS is used here because that is often how we bring in styling, and it is useful to show that it need not be 
 globally applied.
@@ -27,6 +27,7 @@ Using ~~Grunt/Browserify~~
 [webpack](http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html):
 
     npm install webpack -g
+    npm install webpack-dev-server -g
 
 ### Can I see the project working before I change anything?
 
