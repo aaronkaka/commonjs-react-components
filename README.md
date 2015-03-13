@@ -23,11 +23,8 @@ Install [NodeJS](http://nodejs.org/download/). This automatically installs npm.
 
 ## Tool Chain
 
-Using ~~Grunt/Browserify~~ 
+Build and package with 
 [webpack](http://christianalfoni.github.io/javascript/2014/12/13/did-you-know-webpack-and-react-is-awesome.html):
-
-    npm install webpack -g
-    npm install webpack-dev-server -g
 
 ### Can I see the project working before I change anything?
 
