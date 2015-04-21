@@ -5,7 +5,13 @@ function init() {
   var eventedElementId = 'eventedElement',
       eventedElement = document.getElementById(eventedElementId);
 
-  // Data in detail object would come from a service endpoint
+  document.body.dispatchEvent(
+    new CustomEvent('scriptinclude', {
+      detail: '.container'
+    })
+  );
+
+  // Data in detail objects would come from a service endpoint
 
   var initComponent1 = new CustomEvent('initCard', {
       detail: {

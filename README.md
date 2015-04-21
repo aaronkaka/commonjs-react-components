@@ -39,18 +39,19 @@ Once the above is complete, open a browser tab to **localhost:8080**.
 
 Live reload is activated, so that any saved change to the watched source automatically reloads the browser page.
 
-### Feature Flag
+### Script Include
 
-The SCRIPTINCLUDE feature flag is used at build time to determine whether the component is a simple script include or 
-brought in as an npm module. Either way, it must be addressed in the consumer webpack config:
+In the case of a script include for _build/dist.card-component.js_, build the minified version:
 
-    var definePlugin = new webpack.DefinePlugin({
-        __SCRIPTINCLUDE__: JSON.stringify(JSON.parse(process.env.BUILD_SCRIPTINCLUDE || 'false'))
-    });
+    > webpack -p
     
-In the case of a script include for _build/dist.card-component.js_, build the minified version (\*nix):
+In the consuming app, event the scriptinclude:
 
-    > BUILD_SCRIPTINCLUDE=1 webpack -p
+    document.body.dispatchEvent(
+        new CustomEvent('scriptinclude', {
+            detail: '.container'
+        })
+    );
 
 ### How do I require() it into my consuming application?
 
@@ -67,4 +68,4 @@ Example javascript:
     
 Then you must build the required bundle you've configured:
 
-    > webpack [-p]
+    > webpack

@@ -29,8 +29,8 @@ function cardstrap(containerClass) {
   }
 }
 
-if (__SCRIPTINCLUDE__) {
-  cardstrap('.container');
-}
+document.body.addEventListener('scriptinclude', function(e) {
+  cardstrap(e.detail);
+});
 
 module.exports = cardstrap;
