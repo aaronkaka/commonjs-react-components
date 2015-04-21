@@ -37,7 +37,7 @@ Once the above is complete, open a browser tab to **localhost:8080**.
 
 ### Live Reload
 
-Live reload is activated, so that any saved change to the watched source automatically reloads the browser page.
+Hot reload is activated, so that any saved change to the watched source automatically reloads the browser page.
 
 ### Script Include
 
@@ -45,7 +45,7 @@ In the case of a script include for _build/dist.card-component.js_, build the mi
 
     > webpack -p
     
-In the consuming app, event the scriptinclude:
+In the consuming app, event the script include target container:
 
     document.body.dispatchEvent(
         new CustomEvent('scriptinclude', {
@@ -55,7 +55,7 @@ In the consuming app, event the scriptinclude:
 
 ### How do I require() it into my consuming application?
 
-Publish your component to an npm registry; set up your project with webpack, including loaders and feature flag handler.
+Publish your component to an npm registry; set up your project with webpack, including loaders.
     
 Then in your consuming app:
  
