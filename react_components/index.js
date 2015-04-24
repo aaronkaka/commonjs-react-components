@@ -9,24 +9,27 @@ var Card  = require('./Card.js');
 function cardstrap(containerClass) {
 
   // Convention being used is that the card components go into container-styled divs
-  var containerElements = document.querySelectorAll(containerClass);
+  var containers = document.querySelectorAll(containerClass),
+      container = containers.length;
 
-  // Listen for card component initialization in each container-styled div
-  for (var i = 0, max = containerElements.length; i < max; i++) {
+  // Listen for card component initialization in each container
+  while (container--) {
 
-    document.getElementById(containerElements[i].id).addEventListener('initCard', function (e) {
+    document.getElementById(containers[container].id)
+      .addEventListener('initCard', function (e) {
 
-      var targetElement = e.detail.targetElem;
+        var targetData = e.detail,
+            targetElement = e.detail.targetElem;
 
-      console.info('New Event: ' + e.type + ' for ' + targetElement);
-      console.info('Custom data: ', e.detail);
+        console.info('New Event: ' + e.type + ' for ' + targetElement);
+        console.info('Custom data: ', targetData);
 
-      React.render(
-        <Card data={e.detail} key={targetElement} />,
-        document.getElementById(targetElement));
-
-    });
+        React.render(
+          <Card data={targetData} key={targetElement} />,
+          document.getElementById(targetElement));
+      });
   }
+
 }
 
 document.body.addEventListener('scriptinclude', function(e) {
