@@ -3,7 +3,13 @@
     <head>
         <title>CommonJS Component POC</title>
         <meta charset="utf-8">
-        <!-- where's the styling?? -->
+        <style type="text/css">
+            .no-fouc { display: none; }
+        </style>
+        <script type="text/javascript">
+            document.documentElement.className = 'no-fouc';
+        </script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
         <div class="container" id="eventedElement">

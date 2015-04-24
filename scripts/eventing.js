@@ -3,7 +3,10 @@
 function init() {
 
   var eventedElementId = 'eventedElement',
-      eventedElement = document.getElementById(eventedElementId);
+      eventedElement = document.getElementById(eventedElementId),
+      foucTarget = document.getElementsByClassName('no-fouc')[0];
+
+  foucTarget.className = '';
 
   document.body.dispatchEvent(
     new CustomEvent('scriptinclude', {

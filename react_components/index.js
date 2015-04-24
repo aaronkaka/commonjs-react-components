@@ -1,8 +1,5 @@
 'use strict';
 
-// Bootstrap is being used globally
-require('../css/bootstrap.min.css');
-
 var React = require('react');
 var Card  = require('./Card.js');
 

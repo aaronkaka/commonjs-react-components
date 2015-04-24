@@ -16,15 +16,15 @@ to build and share UI components
 External CSS is used here because that is often how we bring in styling, and it is useful to show that it need not be 
 globally applied.
 
-## Prerequisites
+## Tool Chain
 
 Install [NodeJS](http://nodejs.org/download/). This automatically installs npm.
-
-## Tool Chain
 
 Make the webpack command available:
 
     npm install webpack -g
+
+## Playtime
 
 ### Can I see the project working before I change anything?
 
@@ -38,7 +38,9 @@ Once the above is complete, open a browser tab to **localhost:8080**.
 
 ### Live Reload
 
-Hot reload is activated, so that any saved change to the watched source automatically reloads the browser page.
+Hot module replacement is activated, so that any saved change to the watched source automatically reloads the browser page.
+
+## Consume
 
 ### Script Include
 
