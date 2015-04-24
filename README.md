@@ -28,7 +28,7 @@ Make the webpack command available:
 
 ### Can I see the project working before I change anything?
 
-After cloning the repo (\*nix):
+After cloning the repo:
 
     cd commonjs-react-components
     npm install
@@ -41,6 +41,8 @@ Once the above is complete, open a browser tab to **localhost:8080**.
 Hot module replacement is activated, so that any saved change to the watched source automatically reloads the browser page.
 
 ## Consume
+
+The card component is built for use with Bootstrap v3.
 
 ### Script Include
 

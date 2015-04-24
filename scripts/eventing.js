@@ -6,7 +6,7 @@ function init() {
       eventedElement = document.getElementById(eventedElementId),
       foucTarget = document.getElementsByClassName('no-fouc')[0];
 
-  foucTarget.className = '';
+  foucTarget ? foucTarget.className = '' : null;
 
   document.body.dispatchEvent(
     new CustomEvent('scriptinclude', {
