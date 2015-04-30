@@ -40,6 +40,12 @@ Once the above is complete, open a browser tab to **localhost:8080**.
 
 Hot module replacement is activated, so that any saved change to the watched source automatically reloads the browser page.
 
+### Test
+
+The project is wired to unit test with the Jest framework.
+
+    npm test
+
 ## Consume
 
 The card component is built for use with Bootstrap v3.

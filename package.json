@@ -4,7 +4,14 @@
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
   "main": "react_components/index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --hot --progress --colors"
+    "dev": "webpack-dev-server --devtool eval --hot --progress --colors",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "./scripts/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ]
   },
   "author": "Aaron Kaka <aaron.kaka@gmail.com>",
   "license": "MIT",
@@ -17,7 +24,9 @@
   },
   "devDependencies": {
     "css-loader": "^0.9.1",
+    "jest-cli": "^0.4.0",
     "jsx-loader": "^0.12.2",
+    "react-tools": "^0.13.2",
     "style-loader": "^0.8.3",
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0"
