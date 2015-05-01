@@ -1,8 +1,5 @@
 'use strict';
 
-// componentStyles is inline styling scoped to the component
-var componentStyles = require('../css/styles.css');
-
 var React  = require('react');
 var Avatar = require('./Avatar.js');
 var Bio    = require('./Bio.js');
@@ -49,7 +46,7 @@ module.exports = React.createClass({
         var data = this.state.data;
 
         return (
-          <div style={componentStyles} className="panel panel-default">
+          <div className="panel panel-default">
              <div className="panel-heading"><h4>{data.username}</h4></div>
               <div className="panel-body">
                 <Avatar imgSrc={data.avatar || 'http://placehold.it/150x150'} />

@@ -14,7 +14,7 @@ function init() {
     })
   );
 
-  // Data in detail objects would come from a service endpoint
+  // Data in detail objects could come from a service endpoint
 
   var initComponent1 = new CustomEvent('initCard', {
       detail: {

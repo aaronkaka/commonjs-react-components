@@ -1,6 +1,6 @@
 {
   "name": "commonjs-react-components",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
   "main": "react_components/index.js",
   "scripts": {

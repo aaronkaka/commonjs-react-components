@@ -3,3 +3,4 @@ images
 scripts
 index.html
 .idea
+webpack.config.js
