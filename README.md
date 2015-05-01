@@ -13,8 +13,7 @@ to build and share UI components
 - **External styling is bundled with the component, simply using `require` statements**
 - Component-specific styling is scoped to the component
 
-External CSS is used here because that is often how we bring in styling, and it is useful to show that it need not be 
-globally applied.
+The original method to scope style to the component was a failure, so I resorted to applying css selectors for now.
 
 ## Tool Chain
 

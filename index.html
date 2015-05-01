@@ -11,7 +11,7 @@
         </script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
-    <body>
+    <body style="background-color:#e0e0e0;-webkit-font-smoothing: antialiased;">
         <div class="container" id="eventedElement">
          <h3 class="text-center">Evented Card Components</h3>
          <div class="row">
@@ -36,9 +36,12 @@
          </div><!--/row-->
         </div><!--/container-->
 
-        <span class="pull-right">This is here to prove that component styling is strictly scoped to the component:&nbsp;</span>
+        <h3 class="text-center"></h3>
+        <span class="text-center">
+            <p>This line is here to prove that component styling is strictly scoped to the component.</p>
+        </span>
         <br />
-        <img src="images/avatar.png" class="img-circle pull-right" />
+        <img src="images/avatar.png" class="img-circle" />
 
         <script src="http://localhost:8080/webpack-dev-server.js"></script>
         <script src="build/dev.card-component.js"></script>

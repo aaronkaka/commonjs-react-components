@@ -46,22 +46,22 @@ module.exports = React.createClass({
         var data = this.state.data;
 
         return (
-          <div className="panel panel-default">
-             <div className="panel-heading"><h4>{data.username}</h4></div>
-              <div className="panel-body">
+          <div className="panel panel-default cardComponent">
+             <div className="panel-heading cardComponent"><h4 className="cardComponent">{data.username}</h4></div>
+              <div className="panel-body cardComponent">
                 <Avatar imgSrc={data.avatar || 'http://placehold.it/150x150'} />
-                <div className="clearfix"></div>
+                <div className="clearfix cardComponent"></div>
                 <hr />
                 <Bio text={data.bio} />
-                <hr />
-                <button className="btn btn-danger" onClick={this.deleteBio}>Delete bio</button>
+                <hr className="cardComponent" />
+                <button className="btn btn-danger cardComponent" onClick={this.deleteBio}>Delete bio</button>
                 <br /><br />
                 <Alert text={this.state.alerts} />
 
                 <form>
-                  <div className="input-group">
-                    <div className="input-group-btn">
-                    <button className="btn btn-default">+1</button><button className="btn btn-default">s</button>
+                  <div className="input-group cardComponent">
+                    <div className="input-group-btn cardComponent">
+                    <button className="btn btn-default cardComponent">+1</button><button className="btn btn-default cardComponent">s</button>
                     </div>
                     <input type="text" className="form-control" placeholder="Add a comment.." />
                   </div>

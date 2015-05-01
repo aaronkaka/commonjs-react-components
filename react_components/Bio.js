@@ -5,7 +5,7 @@ var React = require('react');
 module.exports = React.createClass({
     render: function() {
         return (
-          <p>{this.props.text}</p>
+          <p className="cardComponent">{this.props.text}</p>
         )
     }
 });

@@ -1,7 +1,7 @@
 'use strict';
 
 // component styling
-require('../css/styles.css');
+require('../css/card.css');
 
 var React = require('react');
 var Card  = require('./Card.js');
