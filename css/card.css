@@ -1,6 +1,5 @@
 /*
 Based on a custom Bootstrap 3.2 'Google Plus style' theme
-from http://bootply.com
 
 This CSS code should follow the 'bootstrap.css'
 in your HTML file.
@@ -8,25 +7,19 @@ in your HTML file.
 license: MIT
 author: bootply.com
 */
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
-
-
-.header.cardComponent {background-color:#ffffff;border-width:0;}
-.header.cardComponent .navbar-collapse {background-color:#ffffff;}
-.btn.cardComponent,.form-control.cardComponent,.panel.cardComponent,.list-group,.well {border-radius:1px;box-shadow:0 0 0;}
+.btn.cardComponent,.form-control.cardComponent,.panel.cardComponent {border-radius:1px;box-shadow:0 0 0;}
 .form-control.cardComponent {border-color:#d7d7d7;}
 .btn-primary.cardComponent {border-color:transparent;}
-.btn-primary.cardComponent,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {background-color:#4285f4;}
+.btn-primary.cardComponent {background-color:#4285f4;}
 .btn-plus.cardComponent {background-color:#ffffff;border-width:1px;border-color:#dddddd;box-shadow:1px 1px 0 #999999;border-radius:3px;color:#666666;text-shadow:0 0 1px #bbbbbb;}
-.well,.panel.cardComponent {border-color:#d2d2d2;box-shadow:0 1px 0 #cfcfcf;border-radius:3px;}
-.btn-success.cardComponent,.label-success,.progress-bar-success{background-color:#65b045;}
-.btn-info.cardComponent,.label-info,.progress-bar-info{background-color:#a0c3ff;border-color:#a0c3ff;}
-.btn-danger.cardComponent,.label-danger,.progress-bar-danger{background-color:#dd4b39;}
-.btn-warning.cardComponent,.label-warning,.progress-bar-warning{background-color:#f4b400;color:#444444;}
-
+.panel.cardComponent {border-color:#d2d2d2;box-shadow:0 1px 0 #cfcfcf;border-radius:3px;}
+.btn-success.cardComponent {background-color:#65b045;}
+.btn-info.cardComponent {background-color:#a0c3ff;border-color:#a0c3ff;}
+.btn-danger.cardComponent {background-color:#dd4b39;}
+.btn-warning.cardComponent {background-color:#f4b400;color:#444444;}
 hr.cardComponent {border-color: CornFlowerBlue;}
-.panel.cardComponent .btn.cardComponent i,.btn span{
+.panel.cardComponent .btn.cardComponent i,.btn.cardComponent span{
  color:#666666;
 }
 .panel.cardComponent .panel-heading.cardComponent {
@@ -55,7 +48,6 @@ h3,h4,h5.cardComponent {
  border-bottom-width:1px;
  padding-bottom:10px;
 }
-
 p.cardComponent {
  font: normal 18px Roboto,arial,sans-serif;
 }

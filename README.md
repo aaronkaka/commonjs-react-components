@@ -13,7 +13,7 @@ to build and share UI components
 - **External styling is bundled with the component, simply using `require` statements**
 - Component-specific styling is scoped to the component
 
-The original method to scope style to the component was a failure, so I resorted to applying css selectors for now.
+The last one is the trick; at present I resorted to applying css selectors until there is a better (and practical) solution.
 
 ## Tool Chain
 
