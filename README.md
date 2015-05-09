@@ -7,7 +7,7 @@
 A proof-of-concept inspired by this [post](http://simonsmith.io/writing-react-components-as-commonjs-modules/).
 
 - Use [CommonJS Modules](https://www.safaribooksonline.com/library/view/learning-javascript-design/9781449334840/ch11s03.html) 
-to build and share UI components
+to build and share responsive UI components
 - Abstract away the component's implementation without leakage
 - No component API, event all interaction
 - **External styling is bundled with the component, simply using `require` statements**
