@@ -1,6 +1,6 @@
 {
   "name": "commonjs-react-components",
-  "version": "1.2.4",
+  "version": "1.3.0",
   "description": "CommonJS React components, with eventing as the mechanism for interaction.",
   "main": "react_components/index.js",
   "scripts": {
@@ -20,16 +20,16 @@
     "url": "https://github.com/aaronkaka/commonjs-react-components"
   },
   "dependencies": {
-    "react": "~0.12.0"
+    "react": "~0.13.3"
   },
   "devDependencies": {
-    "css-loader": "^0.9.1",
-    "jest-cli": "^0.4.0",
-    "jsx-loader": "^0.12.2",
-    "react-tools": "^0.13.2",
-    "style-loader": "^0.8.3",
-    "webpack": "^1.5.3",
-    "webpack-dev-server": "^1.7.0"
+    "css-loader": "^0.15.4",
+    "jest-cli": "^0.4.15",
+    "jsx-loader": "^0.13.2",
+    "react-tools": "^0.13.3",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
   },
   "keywords": [
     "commonjs",
