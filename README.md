@@ -65,17 +65,27 @@ In the consuming app, event the script include target container:
 
 ### How do I require() it into my consuming application?
 
-Publish your component to an npm registry; set up your project with webpack, including loaders.
-    
-Then in your consuming app:
+Install the published component from your favorite npm registry:
  
-    > npm install commonjs-react-components
+    > npm i commonjs-react-components --save
 
 Example javascript:
 
     var Cardstrap = require('commonjs-react-components');
     Cardstrap('.container');
     
-Then you must build the required bundle you've configured:
+Then build the required bundle with webpack, similar to this webpack.config.js:
 
-    > webpack
+    module.exports = {
+      entry: ['./eventing.js'],
+      output: {
+        path: './',
+        filename: 'bundle.js'
+      },
+      module: {
+        loaders: [
+          { test: /\.js$/, loader: 'jsx-loader' },
+          { test: /\.css$/, loader: 'style-loader!css-loader' }
+        ]
+      }
+    };
