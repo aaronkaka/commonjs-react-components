@@ -1,6 +1,12 @@
-# CommonJS React Components
+![Image](erlasse_mini.jpg?raw=true "achtung")
+    
+The ES2015 (ECMAScript 6) spec has been ratified, and implementation of these features in major JavaScript engines is 
+underway now - including ES6 Modules, which is the native solution to the aims of CommonJS Modules.
+    
+As a result, development of this project will now happen at 
+[es6-react-component](https://github.com/aaronkaka/es6-react-component). Thank you for following me there!
 
-![Image](screenshot.png?raw=true "screenshot")
+# CommonJS React Components
 
 ## Goals
 

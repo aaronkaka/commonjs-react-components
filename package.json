@@ -1,7 +1,7 @@
 {
   "name": "commonjs-react-components",
-  "version": "1.3.0",
-  "description": "CommonJS React components, with eventing as the mechanism for interaction.",
+  "version": "1.3.1",
+  "description": "POC for CommonJS-wrapped evented components with bundled styling, powered by React, and packaged by webpack.",
   "main": "react_components/index.js",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --hot --progress --colors",
